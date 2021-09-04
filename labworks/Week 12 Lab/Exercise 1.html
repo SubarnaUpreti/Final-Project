@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<body onload="getTime()">
+	<h1>Live Date And Time</h1>
+	<div id="time"></div>
+
+	<script type="text/javascript">
+		function getTime(){
+			const today = new Date();
+			let yy = today.getFullYear();
+			let mm = today.getMonth();
+			let dd = today.getDate();
+			let h = today.getHours();
+			let m = today.getMinutes();
+			let s = today.getSeconds();
+			mm = check(mm);
+			dd = check(dd);
+			h = check(h);
+			m = check(m);
+			s = check(s);
+
+			document.getElementById("time").innerHTML = yy + "-" + mm + "-" + dd + "  " + h + ":" + m + ":" + s;
+			setTimeout(getTime, 1000);
+		}
+
+		function check(i){
+			if(i<10){
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
+</body>
+</html>

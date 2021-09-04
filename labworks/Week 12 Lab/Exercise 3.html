@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style type="text/css">
+		#text{
+			border: 2px solid black;
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div id="text" onmouseover="mOver();" onmouseout="mOut();">
+	</div>
+
+	<script type="text/javascript">
+		function mOver(){
+			document.getElementById("text").innerHTML = "Thank You.";
+		}
+
+		function mOut(){
+			document.getElementById("text").innerHTML = "Mouse Over Me.";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>4</title>
+	<script type="text/javascript">
+		choice = prompt("Enter your choice(1-7): ")
+		function show() {
+			switch(choice){
+				case '1':
+				   document.write("Sunday")
+				   break;
+				case '2':
+				   document.write("Monday")
+				   break;
+				case '3':
+				   document.write("Tuesday")
+				   break;
+				case '4':
+				   document.write("Wednesday")
+				   break;
+				case '5':
+				   document.write("Thursday")
+				   break;
+				case '6':
+				   document.write("Friday")
+				   break;
+				case '7':
+				   document.write("Saturday")
+				   break;
+				default:
+				   document.write("Wrong choice")
+				   break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<button onclick="show()">Click here to see day you entered</button>
+</body>
+</html>

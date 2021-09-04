@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style type="text/css">
+		#paragraph{
+			background-color: #ddd;
+			width: 80%;
+			margin-left: 8%;
+			padding: 40px;
+			word-spacing: 1px;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="change_Color();">Change</button>
+	<p id="paragraph" align="center">Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.Hello World. Currently We are leaving in 20st Century.</p>
+
+	<script type="text/javascript">
+		function change_Color(){
+			document.getElementById("paragraph").style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+		}
+	</script>
+</body>
+</html>

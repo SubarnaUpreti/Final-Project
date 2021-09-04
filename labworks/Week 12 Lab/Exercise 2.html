@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+	<h1 id="text" onclick="change_Text();">Hello</h1><br>
+	<button onclick="display_Time();">Display Time</button>
+	<div id="time">
+	</div>
+
+	<script>
+		function change_Text(){
+			document.getElementById("text").innerHTML = "World"
+		}
+
+		function display_Time(){
+			const today = new Date();
+			let yy = today.getFullYear();
+			let mm = today.getMonth();
+			let dd = today.getDate();
+			let h = today.getHours();
+			let m = today.getMinutes();
+			let s = today.getSeconds();
+			mm = check(mm);
+			dd = check(dd);
+			h = check(h);
+			m = check(m);
+			s = check(s);
+			document.getElementById("time").innerHTML = yy + "-" + mm + "-" + dd + " " + h + ":" + m + ":" + s;
+		}
+
+		function check(i){
+			if(i<10){
+				i = "0" + i;
+			}
+			return i;
+		}
+
+
+	</script>
+	
+</body>
+</html>

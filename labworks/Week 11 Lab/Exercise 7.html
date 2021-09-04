@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>7</title>
+</head>
+<body>
+	<table align="center" id="tblMain" style="border: solid 1px black;" cellpadding="0" 
+  cellspacing="0" width="200px"> 
+  <th> 
+  Heading 
+  </th> 
+  <tr> 
+  <td> 
+  Row 1 
+  </td> 
+  </tr> 
+  <tr> 
+  <td> 
+  Row 1 
+  </td> 
+  </tr> 
+  <tr> 
+  <td> 
+  Row 2 
+  </td> 
+  </tr> 
+  <tr> 
+  <td> 
+  Row 3 
+  </td> 
+  </tr> 
+  <tr> 
+  <td> 
+   Row 4 
+  </td> 
+  </tr> 
+  <tr> 
+  <td> 
+  </table> 
+  <script language="javascript"> 
+  var tbl = document.getElementById("tblMain"); 
+  if (tbl != null) { 
+  if (tbl.rows[0] != null) { 
+  tbl.rows[0].style.backgroundColor = "#365890"; 
+  tbl.rows[0].style.color = "#FFFFFF"; 
+   } 
+  for (var i = 1; i < tbl.rows.length; i++) { 
+  if (i % 2 == 0) 
+  tbl.rows[i].style.backgroundColor = "#365890"; 
+  } 
+  } 
+  </script> 
+</body>
+</html>

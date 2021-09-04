@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Good Photographers Photo Store : Index Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<!--index container-->
+	<div class="banner" style="height: 100vh;" >
+		<!--Navigation-->
+		<div class="navbar">
+			<!--logo-->
+			<a href="index.html">
+				<img src="images/logo.png" class="logo" alt="logo">
+			</a>
+			<ul id="menu-items">
+				
+				<li><a href="home.html"> Home </a></li>
+				<li><a href="about.html"> About Us </a></li>
+				<li><a href="product.html"> Products </a></li>
+				<li><a href="contact.html"> Contact Us </a></li>
+				<li><a href="blog.html"> Blogs </a></li>
+				<li><a href="favorite.html"> Favorite </a></li>
+				<li class="cart"><a href="cart.html"> <ion-icon name="basket"></ion-icon>Cart</a></li>
+				<li><a href="portfolio.html"> Portfolio </a></li>
+
+			</ul>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="image">
+			
+		</div>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<!--index body-->
+		<div class="content">
+			<h1>Click Conserve Care</h1>
+			<p>The wildlife and it's habitat can't speak. So we must and we will...</p>
+			<div class="index-button">
+				<a href="home.html"><button type="button"> <span></span> DISCOVER MORE </button></a>
+			</div>
+		</div>
+		
+	</div>
+	<script >
+		var menuItems=document.getElementById("menu-items")
+		menuItems.style.maxHeight ="0px";
+		function menutoggle(){
+			if(menuItems.style.maxHeight =="0px")
+			{
+				menuItems.style.maxHeight ="200px"
+			}
+			else{
+				menuItems.style.maxHeight ="0px"
+			}
+		}
+	</script>
+
+</body>
+</html>

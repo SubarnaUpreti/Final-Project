@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3</title>
+	<script type="text/javascript">
+		marks = prompt("Enter your Marks: ")
+
+		function mObtained() {
+			if(marks>=80 && marks<=100)
+				document.write("Distinction")
+			else if(marks>=60 && marks<80)
+				document.write("First Division")
+			else if(marks>=50 && marks<60)
+				document.write("Second Division")
+			else if(marks>=40 && marks<50)
+				document.write("Thrid Division")
+			else
+				document.write("Fail")
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="button" value="Click here to display your grades" onclick="mObtained();">
+	</form>
+</body>
+</html>
