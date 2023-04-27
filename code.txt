@@ -1,0 +1,55 @@
+enable 
+hostname (name)
+config ter
+
+for switch:
+
+create vlan:
+vlan 5
+exit
+vlan 10
+exit
+vlan 99
+exit
+
+
+set vlan ip address:
+interface vlan 99
+ip address 0.0.0.0 0.0.0.0
+no shutdown
+
+pc to switch connection to pass vlan for each pc on the switch:
+interface fa0/2
+switchport access vlan 5
+switchport mode access
+switchport access vlan 10
+switchport mode access
+no shutdown
+
+pass network for each switch
+interface fa(connected port)
+switchport trunk native vlan 99
+switchport mode trunk
+no shutdown
+
+
+set default gateway:
+ip default-gateway 0.0.0.0
+
+
+
+for router:
+interface g0/0
+no shutdown
+ interface g0/0.5
+ encapsulation dot1Q 5
+ ip address 0.0.0.0 0.0.0.0
+ no shut down
+ exit
+ do write
+
+same step follow
+
+help code
+show interface trunk
+show running-config
